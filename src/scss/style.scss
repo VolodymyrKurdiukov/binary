@@ -1,0 +1,29 @@
+@import "base/null.scss";
+@import "base/fonts";
+@import "base/btn";
+@import "base/links";
+
+* {
+	font-family: "Montserrat", sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	max-width: 1190px;
+	padding: 0px 10px;
+	margin: 0 auto;
+}
+
+.ibg {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	img {
+		display: none;
+	}
+}
+@import "blocks/header";
+@import "blocks/footer";
+
+@import "base/media";
