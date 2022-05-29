@@ -32,3 +32,28 @@ $(document).ready(function () {
 	});
 });
 //=====================================================================================================================
+
+//scroll main_bg
+$(window).scroll(function (event) {
+	var s = 0 - $(this).scrollTop() / 3;
+	$('.main__img').css('transform', 'translate3d(0, ' + s + 'px, 0)');
+});
+
+//scroll main_bg
+$(window).resize(function (event) {
+	main();
+});
+function main() {
+	var h = $(window).outerHeight();
+	$('.main').css('min-height', h);
+}
+main();
+//=====================================================================================================================
+
+//goto block
+$('.goto').click(function () {
+	var el = $(this).attr('href').replace('#', '');
+	var offset = 0;
+	$('body,html').animate({ scrollTop: $('.' + el).offset().top + offset }, 500, function () { });
+});
+
