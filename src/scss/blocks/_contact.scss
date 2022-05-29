@@ -1,0 +1,143 @@
+.contact {
+	margin: 0px 0px 102px 0px;
+	&__title {
+		margin: 0px 0px 119px 0px;
+	}
+}
+
+.body-contact {
+	padding: 0px 100px;
+	display: flex;
+	&__form {
+		text-align: right;
+		margin: 0px 83px 0px 0px;
+		padding: 40px 0px 0px 0px;
+		.error {
+			border-top: 1px solid red;
+		}
+	}
+	&__inputs {
+		display: flex;
+		margin: 0px 0px 75px 0px;
+	}
+	&__input {
+		position: relative;
+		border-top: 1px solid #000;
+		width: 161px;
+		height: 35px;
+		margin: 0px 60px 0px 0px;
+		&:last-child {
+			margin: 0px 0px 0px 0px;
+		}
+		label {
+			position: absolute;
+			top: -30px;
+			left: 0;
+			font-weight: 700;
+			text-align: center;
+			text-transform: uppercase;
+			letter-spacing: 0.84px;
+		}
+		input {
+			padding: 0px 20px;
+			width: 100%;
+			height: 100%;
+			background-color: #f8f7f7;
+			font-weight: 300;
+			line-height: 26px;
+			text-align: left;
+			font-weight: 300;
+		}
+	}
+
+	&__textarea {
+		position: relative;
+		border-top: 1px solid #000;
+		width: 383px;
+		height: 118px;
+		margin: 0px 0px 42px 0px;
+		label {
+			position: absolute;
+			top: -30px;
+			left: 0;
+			font-weight: 700;
+			text-align: center;
+			text-transform: uppercase;
+			letter-spacing: 0.84px;
+		}
+		textarea {
+			resize: none;
+			padding: 20px 20px;
+			width: 100%;
+			height: 100%;
+			background-color: #f8f7f7;
+			font-weight: 300;
+			line-height: 26px;
+			text-align: left;
+			font-weight: 300;
+		}
+	}
+
+	&__btn {
+		font-weight: 700;
+		text-align: right;
+		text-transform: uppercase;
+		letter-spacing: 0.84px;
+		transition: 0.5s all;
+		&:hover {
+			text-shadow: 1px 1px 10px #000;
+		}
+	}
+}
+.text-contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 255px;
+	&__text {
+		font-weight: 300;
+		line-height: 26px;
+		text-align: left;
+		font-weight: 300;
+		margin: 0px 0px 40px 0px;
+	}
+
+	&__title {
+		font-weight: 700;
+		margin: 0px 0px 25px 0px;
+	}
+
+	&__list {
+		display: flex;
+		align-items: center;
+		margin: 0px 0px 15px 0px;
+		li {
+			margin: 0px 12px 0px 0px;
+		}
+	}
+
+	&__link {
+		/* Style for "base copy" */
+		width: 29px;
+		height: 29px;
+		border: 2px solid #1e1e1e;
+		border-radius: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__mail {
+		a {
+			text-decoration: none;
+		}
+		white-space: nowrap;
+		font-weight: 300;
+		line-height: 26px;
+		text-align: left;
+		font-weight: 300;
+		span {
+			font-weight: 700;
+		}
+	}
+}

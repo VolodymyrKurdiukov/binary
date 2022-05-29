@@ -56,4 +56,29 @@ $('.goto').click(function () {
 	var offset = 0;
 	$('body,html').animate({ scrollTop: $('.' + el).offset().top + offset }, 500, function () { });
 });
+//=====================================================================================================================
+
+//filter
+$('.body-portfolio__link').click(function (event) {
+	var i = $(this).data('filter');
+	if (i == 1) {
+		$('.body-portfolio__column').show();
+	} else {
+		$('.body-portfolio__column').hide();
+		$('.body-portfolio__column.f_' + i).show();
+	}
+	$('.body-portfolio__link').removeClass('active');
+	$(this).addClass('active');
+
+	return false;
+});
+//=====================================================================================================================
+
+//zoom
+if ($('.gallery').length > 0) {
+	baguetteBox.run('.gallery', {
+		// Custom options
+	});
+}
+
 

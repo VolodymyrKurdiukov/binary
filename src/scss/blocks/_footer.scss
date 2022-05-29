@@ -1,0 +1,42 @@
+.footer {
+	background-color: #3c3c3c;
+	padding: 50px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	&__logo {
+		margin: 0px 0px 40px 0px;
+	}
+
+	&__social {
+	}
+
+	&__list {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0px 0px 34px 0px;
+		li {
+			margin: 0px 22px 0px 0px;
+			&:last-child {
+				margin: 0px 0px 0px 0px;
+			}
+		}
+	}
+
+	&__link {
+		text-decoration: none;
+		color: #a4a4a4;
+		transition: 0.5s all;
+		&:hover {
+			text-shadow: 1px 1px 10px #000;
+			text-decoration: underline;
+		}
+	}
+
+	&__copy {
+		color: #6c6c6c;
+	}
+}
