@@ -20,6 +20,11 @@
 	max-width: 1120px;
 	padding: 0px 10px;
 	margin: 0 auto;
+	&-b{
+		max-width: 1270px;
+		padding: 0px 10px;
+		margin: 0 auto;
+	}
 }
 .content{
 	background-color: #fff;
@@ -40,6 +45,7 @@
 @import "blocks/portfolio";
 @import "blocks/partners";
 @import "blocks/contact";
+@import "blocks/portfolio_page";
 @import "blocks/footer";
 
 @import "base/media";

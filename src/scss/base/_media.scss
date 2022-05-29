@@ -1,4 +1,19 @@
 @media (max-width: 1199.98px) {
+	.body-about{
+		align-items: center;
+		margin: 50px 0px 0px 0px;
+		flex-direction: column;
+		&__column{
+			flex: 1 1 100%;
+			&:first-child{
+				margin: 0px 0px 30px 0px;
+			}
+		}
+	}
+	.card-body{
+		min-height: 100%;
+		max-width: 814px;
+	}
 }
 @media (max-width: 991.98px) {
 	.main {
@@ -31,6 +46,14 @@
 	}
 	.body-contact{
 		padding: 0px 20px;
+	}
+	.body-about{
+		&__column{
+			max-width: 814px;
+		}
+		&__item{
+			width: 100%;
+		}
 	}
 }
 
@@ -192,6 +215,13 @@
 		}
 		&__input{
 			margin: 0px 0px 45px 0px;
+		}
+	}
+	.card-body{
+		padding: 20px 15px 20px 15px;
+		&__title{
+			font-size: 25px;
+			letter-spacing: 0;
 		}
 	}
 }
